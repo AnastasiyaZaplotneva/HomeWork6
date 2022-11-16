@@ -8,9 +8,7 @@ Console.Clear();
 void IntersectionPointOfStraight (double a1, double c1, double a2, double c2, out double x, out double y)
 {
 	x = -(c1 - c2) / (a1 - a2);
-    Console.WriteLine(x);
-	y = a1 * x + c1;
-    Console.WriteLine(y);
+   	y = a1 * x + c1;
 }
 
 
@@ -25,7 +23,7 @@ double b2 = Convert.ToDouble(Console.ReadLine());
 
 double x1;
 double y1;
-if (k1 == k2)
+if (k1 == k2 && b1 != b2)
 {
     Console.WriteLine("Эти прямые параллельны");
 }	
